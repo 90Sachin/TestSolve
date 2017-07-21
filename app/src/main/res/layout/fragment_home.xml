@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.sachin.testsolve.home.HomeFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_weight=".4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPageLikeFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="200dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_centerInParent="true"
+            app:ci_animator="@animator/indicator_animator"
+            app:ci_animator_reverse="@animator/indicator_animator_reverse"
+            app:ci_drawable="@drawable/black_radius_square"
+            app:ci_gravity="center"
+            app:ci_height="10dp"
+            app:ci_margin="6dp"
+            app:ci_width="10dp"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_tab_layout_height"
+        android:background="@color/white"
+        android:forceHasOverlappingRendering="true"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="@color/colorAccent"
+
+        />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        />
+
+
+</LinearLayout>

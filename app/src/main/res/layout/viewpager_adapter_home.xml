@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/ivBannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/ivShadowImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_height="@dimen/_40dp">
+        <ImageView
+            android:id="@+id/imagePlay"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:src="@drawable/play"
+            android:padding="@dimen/_2dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imagePlay"
+            android:paddingTop="@dimen/_2dp"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_2dp"
+            >
+        <TextView
+            android:id="@+id/textMovieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sachin bhopal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sp"
+            />
+        <TextView
+            android:id="@+id/textMovieInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="Sachin bhopal"
+            android:textSize="@dimen/_12sp"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
